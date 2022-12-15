@@ -12,7 +12,7 @@ import urllib.request
 # print(type(diccionario))
 # print(type(json_text))
 # print(diccionario[0])
-# print(type(diccionario[0]["nombre"]))
+# print((diccionario[0]["nombre"]))
 
 # for i in diccionario:
 #     print(i["id"], end=" - ")
@@ -26,12 +26,13 @@ import urllib.request
 
 # nuevoString = ""
 
-# urlhandler = urllib.request.urlopen("https://www.mockachino.com/b95175d8-0940-4e/users")
+# urlhandler = urllib.request.urlopen("https://www.mockachino.com/fb1339e6-c1d4-48/users")
+
 # for i in urlhandler:
-#     # print(type(i))
-#     # print(i)
-#     # print(type(i.decode()))
-#     # print(i.decode())
+    # print(type(i))
+    # print(i)
+    # print(type(i.decode()))
+    # print(i.decode())
 #     nuevoString = nuevoString + i.decode()
 
 # print(type(nuevoString))
@@ -49,7 +50,7 @@ import urllib.request
 # ///////////////////////////////////////////////////////////////////////////////////////////////////
 # Manera elegante
 
-urlhandler = urllib.request.urlopen("https://www.mockachino.com/b95175d8-0940-4e/users")
+urlhandler = urllib.request.urlopen("https://www.mockachino.com/fb1339e6-c1d4-48/users")
 for i in urlhandler:
     arrayJson2 = json.loads(i)
 
